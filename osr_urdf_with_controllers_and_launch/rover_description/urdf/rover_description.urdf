@@ -75,15 +75,15 @@
   <gazebo reference="base_scan">
     <sensor type="ray" name="lds_lfcd_sensor">
       <pose>0 0 0 0 0 0</pose>
-      <visualize>true</visualize>
+      <visualize>false</visualize>
       <update_rate>5</update_rate>
       <ray>
         <scan>
           <horizontal>
             <samples>360</samples>
             <resolution>1</resolution>
-            <min_angle>0.0</min_angle>
-            <max_angle>6.28319</max_angle>
+            <min_angle>-90</min_angle>
+            <max_angle>90</max_angle>
           </horizontal>
         </scan>
         <range>
@@ -191,8 +191,8 @@
       <camera name="head">
         <horizontal_fov>1.30</horizontal_fov>
         <image>
-          <width>800</width>
-          <height>800</height>
+          <width>400</width>
+          <height>200</height>
           <format>R8G8B8</format>
         </image>
         <clip>

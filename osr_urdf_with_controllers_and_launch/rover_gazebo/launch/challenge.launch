@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<launch>
-  <include file="$(find rover_gazebo)/launch/martian_world.launch"/>
-  <include file="$(find rover_gazebo)/launch/osr_spawn.launch"/>
-  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
-  
-</launch>
